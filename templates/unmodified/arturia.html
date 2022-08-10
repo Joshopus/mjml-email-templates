@@ -32,6 +32,13 @@
         <![endif]-->
         
         
+    <style type="text/css">
+      @media only screen and (min-width:480px) {
+        .mj-column-per-33-333333333333336 { width:33.333333333333336% !important; max-width: 33.333333333333336%; }
+.mj-column-per-100 { width:100% !important; max-width: 100%; }
+.mj-column-per-25 { width:25% !important; max-width: 25%; }
+      }
+    </style>
     
   
         <style type="text/css">
@@ -44,214 +51,73 @@
     }
   
         </style>
-        <style type="text/css">/*@media all and (max-width: 480px) {*/
-			/*  .ip-section:not(.disable-responsive) .ip-column > table > tbody > tr > td {*/
-			/*    padding: 0 !important;*/
-			/*  }*/
-			/*  .ip-section:not(.disable-responsive) .ip-column + .ip-column {*/
-			/*    margin-top: 8px;*/
-			/*  }*/
-			/*}*/
-			
-			
-			.ip-text-block p,
-			.ip-text-block ol,
-			.ip-text-block ul,
-			.ip-text-block pre,
-			.ip-text-block blockquote,
-			.ip-text-block h1,
-			.ip-text-block h2,
-			.ip-text-block h3,
-			.ip-text-block h4,
-			.ip-text-block h5,
-			.ip-text-block h6 {
-			    padding: 0;
-			    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
-			}
-			.ip-text-block ul > li::before {
-			    content: '\2022';
-			}
-			.ip-text-block ul[data-checked=true],
-			.ip-text-block ul[data-checked=false] {
-			    pointer-events: none;
-			}
-			.ip-text-block ul[data-checked=true] > li *,
-			.ip-text-block ul[data-checked=false] > li * {
-			    pointer-events: all;
-			}
-			.ip-text-block ul[data-checked=true] > li::before,
-			.ip-text-block ul[data-checked=false] > li::before {
-			    color: #777;
-			    cursor: pointer;
-			    pointer-events: all;
-			}
-			.ip-text-block ul[data-checked=true] > li::before {
-			    content: '\2611';
-			}
-			.ip-text-block ul[data-checked=false] > li::before {
-			    content: '\2610';
-			}
-			.ip-text-block li::before {
-			    display: inline-block;
-			    white-space: nowrap;
-			    width: 1.2em;
-			}
-			.ip-text-block li:not(.ql-direction-rtl)::before {
-			    margin-left: -1.5em;
-			    margin-right: 0.3em;
-			    text-align: right;
-			}
-			.ip-text-block li.ql-direction-rtl::before {
-			    margin-left: 0.3em;
-			    margin-right: -1.5em;
-			}
-			.ip-text-block ol li {
-			    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
-			    counter-increment: list-0;
-			}
-			.ip-text-block ol li:before {
-			    content: counter(list-0, decimal) '. ';
-			}
-			.ip-text-block ol li.ql-indent-1 {
-			    counter-increment: list-1;
-			}
-			.ip-text-block ol li.ql-indent-1:before {
-			    content: counter(list-1, lower-alpha) '. ';
-			}
-			.ip-text-block ol li.ql-indent-1 {
-			    counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
-			}
-			.ip-text-block ol li.ql-indent-2 {
-			    counter-increment: list-2;
-			}
-			.ip-text-block ol li.ql-indent-2:before {
-			    content: counter(list-2, lower-roman) '. ';
-			}
-			.ip-text-block ol li.ql-indent-2 {
-			    counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
-			}
-			.ip-text-block ol li.ql-indent-3 {
-			    counter-increment: list-3;
-			}
-			.ip-text-block ol li.ql-indent-3:before {
-			    content: counter(list-3, decimal) '. ';
-			}
-			.ip-text-block ol li.ql-indent-3 {
-			    counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
-			}
-			.ip-text-block ol li.ql-indent-4 {
-			    counter-increment: list-4;
-			}
-			.ip-text-block ol li.ql-indent-4:before {
-			    content: counter(list-4, lower-alpha) '. ';
-			}
-			.ip-text-block ol li.ql-indent-4 {
-			    counter-reset: list-5 list-6 list-7 list-8 list-9;
-			}
-			.ip-text-block ol li.ql-indent-5 {
-			    counter-increment: list-5;
-			}
-			.ip-text-block ol li.ql-indent-5:before {
-			    content: counter(list-5, lower-roman) '. ';
-			}
-			.ip-text-block ol li.ql-indent-5 {
-			    counter-reset: list-6 list-7 list-8 list-9;
-			}
-			.ip-text-block ol li.ql-indent-6 {
-			    counter-increment: list-6;
-			}
-			.ip-text-block ol li.ql-indent-6:before {
-			    content: counter(list-6, decimal) '. ';
-			}
-			.ip-text-block ol li.ql-indent-6 {
-			    counter-reset: list-7 list-8 list-9;
-			}
-			.ip-text-block ol li.ql-indent-7 {
-			    counter-increment: list-7;
-			}
-			.ip-text-block ol li.ql-indent-7:before {
-			    content: counter(list-7, lower-alpha) '. ';
-			}
-			.ip-text-block ol li.ql-indent-7 {
-			    counter-reset: list-8 list-9;
-			}
-			.ip-text-block ol li.ql-indent-8 {
-			    counter-increment: list-8;
-			}
-			.ip-text-block ol li.ql-indent-8:before {
-			    content: counter(list-8, lower-roman) '. ';
-			}
-			.ip-text-block ol li.ql-indent-8 {
-			    counter-reset: list-9;
-			}
-			.ip-text-block ol li.ql-indent-9 {
-			    counter-increment: list-9;
-			}
-			.ip-text-block ol li.ql-indent-9:before {
-			    content: counter(list-9, decimal) '. ';
-			}
-			.ip-text-block.ql-blank::before {
-			    color: rgba(0,0,0,0.6);
-			    content: attr(data-placeholder);
-			    font-style: italic;
-			    left: 15px;
-			    pointer-events: none;
-			    position: absolute;
-			    right: 15px;
-			}</style>
-        <!--[if gte mso]><style type="text/css">img { min-height: auto; }</style><![endif]-->
+        
+        
       </head>
       <body style="background-color:#F2F2F2;">
         
         
-      <div class="body" style="padding: 0px 0px 0px 0px; background: #F2F2F2; background-size: 100%; background-color: #F2F2F2;">
+      <div
+         style="background-color:#F2F2F2;"
+      >
         
       
       <!--[if mso | IE]>
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:middle;width:NaNpx;"
+               class="" style="vertical-align:middle;width:200px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+      <div
+         class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:middle;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:middle;" width="100%"
+      >
         
             <tr>
-              <td align="center" class="ip-image-block" style="font-size:0px;padding:10px 25px 10px 25px;word-break:break-word;">
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
                 
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
         <tbody>
           <tr>
-            <td style="width:144px;">
+            <td  style="width:144px;">
               
-        <a href="https://www.arturia.com" target="_blank">
+        <a
+           href="https://www.arturia.com" target="_blank"
+        >
           
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-black/Logo-Baseline-0.15x.png" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="144">
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-black/Logo-Baseline-0.15x.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="144"
+      />
     
         </a>
       
@@ -265,9 +131,24 @@
           
       </table>
     
+      </div>
+    
+          <!--[if mso | IE]>
             </td>
-          </tr>
-        </tbody>
+          
+            <td
+               class="" style="vertical-align:top;width:200px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
       </table>
     
       </div>
@@ -276,58 +157,30 @@
             </td>
           
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:200px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-        
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-      </div>
-    
-          <!--[if mso | IE]>
-            </td>
-          
-            <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
-            >
-          <![endif]-->
-            
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-        
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:10px 25px 10px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:120px;text-align:left;color:#000000;"><!-- htmlmin:ignore -->NEWS<br>MARCH 2016<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:120%;text-align:left;text-decoration:underline;color:#000000;"
+      >NEWS<br />MARCH 2016</div>
     
               </td>
             </tr>
           
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
       </table>
     
       </div>
@@ -353,51 +206,53 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="background:#000001;background-color:#000001;margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="background:#000001;background-color:#000001;margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000001;background-color:#000001;width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000001;background-color:#000001;width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:0px 25px 0px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;padding-top:0;padding-bottom:0;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120px;text-align:left;color:#FFFFFE;"><!-- htmlmin:ignore -->Dear {firstname}, <br><br> You used to follow rhythm, now rhythm follows you, everywhere you go!<br> Discover iSpark, the mobile transposition of our renowned beat-making solution Spark.<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120%;text-align:left;color:#FFFFFE;"
+      >Dear {firstname}, <br /><br /> You used to follow rhythm, now rhythm follows you, everywhere you go!<br /> Discover iSpark, the mobile transposition of our renowned beat-making solution Spark.</div>
     
               </td>
             </tr>
           
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
       </table>
     
       </div>
@@ -423,49 +278,60 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="background-color:#FFFFFE;border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#FFFFFE;vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:0px 0px 0px 0px;word-break:break-word;">
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;word-break:break-word;"
+              >
                 
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
         <tbody>
           <tr>
-            <td style="width:NaNInfinity;">
+            <td  style="width:600px;">
               
-        <a href="https://www.arturia.com/products/ipad-synths/ispark/overview" target="_blank">
+        <a
+           href="https://www.arturia.com/products/ipad-synths/ispark/overview" target="_blank"
+        >
           
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/05.jpg" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="Infinity">
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/05.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600"
+      />
     
         </a>
       
@@ -478,18 +344,17 @@
             </tr>
           
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:25px 25px 25px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;padding-top:25px;padding-bottom:25px;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120px;text-align:left;color:#000000;"><!-- htmlmin:ignore -->iSpark is a powerful mobile production tool allowing you to create and play rhythmic tracks, complex grooves and even complete songs. Its sonic strike force comes along with an unwavering workflow and a real flexibility.<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120%;text-align:left;color:#000000;"
+      >iSpark is a powerful mobile production tool allowing you to create and play rhythmic tracks, complex grooves and even complete songs. Its sonic strike force comes along with an unwavering workflow and a real flexibility.</div>
     
               </td>
             </tr>
           
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
       </table>
     
       </div>
@@ -515,49 +380,60 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="background-color:#FFFFFE;border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#FFFFFE;vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:0px 0px 0px 0px;word-break:break-word;">
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;word-break:break-word;"
+              >
                 
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
         <tbody>
           <tr>
-            <td style="width:NaNInfinity;">
+            <td  style="width:600px;">
               
-        <a href="https://www.arturia.com/products/ipad-synths/ispark/overview" target="_blank">
+        <a
+           href="https://www.arturia.com/products/ipad-synths/ispark/overview" target="_blank"
+        >
           
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/06.jpg" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="Infinity">
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/06.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600"
+      />
     
         </a>
       
@@ -570,18 +446,17 @@
             </tr>
           
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:25px 25px 25px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;padding-top:25px;padding-bottom:25px;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120px;text-align:left;color:#000000;"><!-- htmlmin:ignore -->Check out the iSpark introduction movie shot during the Arturia Experience event at the ADE featuring the Dutch beatmaker FilosofischeStilte.<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120%;text-align:left;color:#000000;"
+      >Check out the iSpark introduction movie shot during the Arturia Experience event at the ADE featuring the Dutch beatmaker FilosofischeStilte.</div>
     
               </td>
             </tr>
           
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
       </table>
     
       </div>
@@ -607,49 +482,60 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="background-color:#FFFFFE;border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#FFFFFE;vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:0px 0px 0px 0px;word-break:break-word;">
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;word-break:break-word;"
+              >
                 
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
         <tbody>
           <tr>
-            <td style="width:NaNInfinity;">
+            <td  style="width:600px;">
               
-        <a href="https://www.arturia.com/products/ipad-synths/ispark/details" target="_blank">
+        <a
+           href="https://www.arturia.com/products/ipad-synths/ispark/details" target="_blank"
+        >
           
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/07.jpg" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="Infinity">
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/07.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600"
+      />
     
         </a>
       
@@ -662,18 +548,17 @@
             </tr>
           
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:25px 25px 25px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;padding-top:25px;padding-bottom:25px;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120px;text-align:left;color:#000000;"><!-- htmlmin:ignore -->Follow Mauricio Garcia, Arturia Product Specialist, presenting you the many clever features of iSpark in this series of tutorials.<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120%;text-align:left;color:#000000;"
+      >Follow Mauricio Garcia, Arturia Product Specialist, presenting you the many clever features of iSpark in this series of tutorials.</div>
     
               </td>
             </tr>
           
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
       </table>
     
       </div>
@@ -699,49 +584,60 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="background-color:#FFFFFE;border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#FFFFFE;vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:0px 0px 0px 0px;word-break:break-word;">
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;word-break:break-word;"
+              >
                 
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
         <tbody>
           <tr>
-            <td style="width:NaNInfinity;">
+            <td  style="width:600px;">
               
-        <a href="https://www.arturia.com/products/ipad-synths/ispark/details" target="_blank">
+        <a
+           href="https://www.arturia.com/products/ipad-synths/ispark/details" target="_blank"
+        >
           
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/08.jpg" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="Infinity">
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/08.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="600"
+      />
     
         </a>
       
@@ -754,21 +650,33 @@
             </tr>
           
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:25px 25px 10px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;padding-top:25px;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120px;text-align:left;color:#000000;"><!-- htmlmin:ignore -->iSpark includes a tremendous collection of factory kits and individual instruments covering most of the field of application of beat-making but it is also compatible with the existing Spark resources and Expansion Packs.<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:120%;text-align:left;color:#000000;"
+      >iSpark includes a tremendous collection of factory kits and individual instruments covering most of the field of application of beat-making but it is also compatible with the existing Spark resources and Expansion Packs.</div>
     
               </td>
             </tr>
           
             <tr>
-              <td align="left" vertical-align="middle" class="ip-button-block" style="font-size:0px;padding:10px 25px 25px 25px;word-break:break-word;">
+              <td
+                 align="center" vertical-align="middle" style="font-size:0px;padding:10px 25px;padding-bottom:25px;word-break:break-word;"
+              >
                 
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
+      >
         <tr>
-          <td align="center" bgcolor="#2DDCB4" role="presentation" style="border:none;border-radius:8px;cursor:auto;mso-padding-alt:10px 25px 10px 25px;background:#2DDCB4;" valign="middle">
-            <a href="https://www.arturia.com/products/ipad-synths/ispark/overview" style="display:inline-block;background:#2DDCB4;color:#000000;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:normal;line-height:120px;margin:0;text-decoration:none;text-transform:none;padding:10px 25px 10px 25px;mso-padding-alt:0px;border-radius:8px;" target="_blank">
-              <!-- htmlmin:ignore -->Learn more about iSpark<!-- htmlmin:ignore -->
+          <td
+             align="center" bgcolor="#2DDCB4" role="presentation" style="border:none;border-radius:8px;cursor:auto;mso-padding-alt:10px 25px;background:#2DDCB4;" valign="middle"
+          >
+            <a
+               href="https://www.arturia.com/products/ipad-synths/ispark/overview" style="display:inline-block;background:#2DDCB4;color:#ffffff;font-family:Helvetica,Arial,sans-serif;font-size:14px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:8px;" target="_blank"
+            >
+              Learn more about iSpark
             </a>
           </td>
         </tr>
@@ -779,9 +687,76 @@
           
       </table>
     
+      </div>
+    
+          <!--[if mso | IE]>
             </td>
-          </tr>
-        </tbody>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div  style="background:#000001;background-color:#000001;margin:0px auto;max-width:600px;">
+        
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000001;background-color:#000001;width:100%;"
+        >
+          <tbody>
+            <tr>
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;"
+              >
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+            <tr>
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:1;text-align:left;color:#FFFFFE;"
+      >Musically yours,<br /> The Arturia Team</div>
+    
+              </td>
+            </tr>
+          
       </table>
     
       </div>
@@ -807,51 +782,221 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="background:#000001;background-color:#000001;margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000001;background-color:#000001;width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:150px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-25 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:10px 25px 10px 25px;word-break:break-word;">
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:1;text-align:left;color:#FFFFFE;"><!-- htmlmin:ignore -->Musically yours,<br> The Arturia Team<!-- htmlmin:ignore --></div>
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:86px;">
+              
+        <a
+           href="http://www.facebook.com/arturia2" target="_blank"
+        >
+          
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/facebook_arturia.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86"
+      />
+    
+        </a>
+      
+            </td>
+          </tr>
+        </tbody>
+      </table>
     
               </td>
             </tr>
           
       </table>
     
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:top;width:150px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-25 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+            <tr>
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:86px;">
+              
+        <a
+           href="http://www.youtube.com/arturiaweb" target="_blank"
+        >
+          
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/youtube.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86"
+      />
+    
+        </a>
+      
             </td>
           </tr>
         </tbody>
+      </table>
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:top;width:150px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-25 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+            <tr>
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:86px;">
+              
+        <a
+           href="http://soundcloud.com/arturia-official" target="_blank"
+        >
+          
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/Soundcloud.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86"
+      />
+    
+        </a>
+      
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+            <td
+               class="" style="vertical-align:top;width:150px;"
+            >
+          <![endif]-->
+            
+      <div
+         class="mj-column-per-25 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
+        
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
+        
+            <tr>
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
+              >
+                
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
+      >
+        <tbody>
+          <tr>
+            <td  style="width:86px;">
+              
+        <a
+           href="http://twitter.com/arturiaofficial" target="_blank"
+        >
+          
+      <img
+         alt="" height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/twitter_arturia.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86"
+      />
+    
+        </a>
+      
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+              </td>
+            </tr>
+          
       </table>
     
       </div>
@@ -877,283 +1022,66 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0;padding-top:0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-        
-            <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:10px 25px 10px 25px;word-break:break-word;">
-                
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-        <tbody>
-          <tr>
-            <td style="width:86px;">
-              
-        <a href="http://www.facebook.com/arturia2" target="_blank">
-          
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/facebook_arturia.png" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86">
-    
-        </a>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-              </td>
-            </tr>
-          
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-      </div>
-    
-          <!--[if mso | IE]>
-            </td>
-          
-            <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
-            >
-          <![endif]-->
-            
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-        
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-        
-            <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:10px 25px 10px 25px;word-break:break-word;">
-                
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-        <tbody>
-          <tr>
-            <td style="width:86px;">
-              
-        <a href="http://www.youtube.com/arturiaweb" target="_blank">
-          
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/youtube.png" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86">
-    
-        </a>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-              </td>
-            </tr>
-          
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-      </div>
-    
-          <!--[if mso | IE]>
-            </td>
-          
-            <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
-            >
-          <![endif]-->
-            
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-        
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-        
-            <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:10px 25px 10px 25px;word-break:break-word;">
-                
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-        <tbody>
-          <tr>
-            <td style="width:86px;">
-              
-        <a href="http://soundcloud.com/arturia-official" target="_blank">
-          
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/Soundcloud.png" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86">
-    
-        </a>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-              </td>
-            </tr>
-          
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-      </div>
-    
-          <!--[if mso | IE]>
-            </td>
-          
-            <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
-            >
-          <![endif]-->
-            
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-        
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
-        
-            <tr>
-              <td align="left" class="ip-image-block" style="font-size:0px;padding:10px 25px 10px 25px;word-break:break-word;">
-                
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-        <tbody>
-          <tr>
-            <td style="width:86px;">
-              
-        <a href="http://twitter.com/arturiaofficial" target="_blank">
-          
-      <img height="auto" src="https://www.arturia.com/images/newsletters/2016-02-ispark/twitter_arturia.png" style="border:none;border-radius:undefinedpx;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="86">
-    
-        </a>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-              </td>
-            </tr>
-          
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-      </div>
-    
-          <!--[if mso | IE]>
-            </td>
-          
-        </tr>
-      
-                  </table>
-                <![endif]-->
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        
-      </div>
-    
-      
-      <!--[if mso | IE]>
-          </td>
-        </tr>
-      </table>
-      
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
       >
-        <tr>
-          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
-      <![endif]-->
-    
-      
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
-        
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
-          <tbody>
-            <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
-                <!--[if mso | IE]>
-                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                
-        <tr>
-      
-            <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
-            >
-          <![endif]-->
-            
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-        
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
         
             <tr>
-              <td align="center" class="ip-text-block" style="font-size:0px;padding:0px 25px 10px 25px;word-break:break-word;">
+              <td
+                 align="center" style="font-size:0px;padding:10px 25px;padding-top:0;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:1;text-align:center;color:#000000;"><!-- htmlmin:ignore -->See this email in your browser <a href="https://www.arturia.com/images/newsletters/2016-02-ispark/newsletter.html" style="text-decoration:none;color:#2DDCB4">here</a><!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:1;text-align:center;color:#000000;"
+      >See this email in your browser <a href="https://www.arturia.com/images/newsletters/2016-02-ispark/newsletter.html" style="text-decoration:none;color:#2DDCB4">here</a></div>
     
               </td>
             </tr>
           
             <tr>
-              <td class="ip-divider-block" style="font-size:0px;padding:10px 0px 10px 0px;word-break:break-word;">
+              <td
+                 style="font-size:0px;padding:10px 25px;padding-right:0;padding-left:0;word-break:break-word;"
+              >
                 
-      <p style="border-top:solid 0px #000000;font-size:1px;margin:0px auto;width:100%;">
+      <p
+         style="border-top:solid 4px #000000;font-size:1px;margin:0px auto;width:100%;"
+      >
       </p>
       
       <!--[if mso | IE]>
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0px #000000;font-size:1px;margin:0px auto;width:NaNpx;" role="presentation" width="NaNpx"
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 4px #000000;font-size:1px;margin:0px auto;width:600px;" role="presentation" width="600px"
         >
           <tr>
             <td style="height:0;line-height:0;">
@@ -1169,11 +1097,6 @@
           
       </table>
     
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
       </div>
     
           <!--[if mso | IE]>
@@ -1197,65 +1120,81 @@
       </table>
       
       <table
-         align="center" border="0" cellpadding="0" cellspacing="0" class="ip-section-outlook" style="width:600px;" width="600"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
         <tr>
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
     
       
-      <div class="ip-section" style="margin:0px auto;border-radius:0px;max-width:600px;">
+      <div  style="margin:0px auto;max-width:600px;">
         
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;border-radius:0px;">
+        <table
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
+        >
           <tbody>
             <tr>
-              <td style="direction:ltr;font-size:0px;padding:0px 0px 0px 0px;text-align:center;">
+              <td
+                 style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0;padding-top:0;text-align:center;"
+              >
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="ip-column-outlook" style="vertical-align:top;width:NaNpx;"
+               class="" style="vertical-align:top;width:600px;"
             >
           <![endif]-->
             
-      <div class="mj-column-px-NaN mj-outlook-group-fix ip-column" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+      <div
+         class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
+      >
         
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-        <tbody>
-          <tr>
-            <td style="border:none;border-radius:0px;vertical-align:top;padding:0px 0px;">
-              
-      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style width="100%">
+      <table
+         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+      >
         
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:0px 25px 0px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;padding-top:0;padding-bottom:0;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:12px;text-align:left;color:#000000;"><!-- htmlmin:ignore -->Your email address is on this list as a result of a subscription, information request, competition, or other correspondence you may have had with us in the past. If you would like to be removed from our list, check the email address this newsletter
-					          was sent to and use the following link: <a href="https://www.arturia.com/index.php?option=com_myarturia&amp;view=newsletter&amp;task=unsubscribeFromEmail&amp;email={email}&amp;token={title}&amp;utm_source=elasticemail&amp;utm_medium=email&amp;utm_campaign=arturia_unsubscribe_2016&amp;utm_term=nl-ispark-launch&amp;utm_content=unsubscribe_footer" style="text-decoration:none;color:#2DDCB4">Unsubscribe</a>. Privacy policy available <a href="https://www.arturia.com/privacypolicy" style="text-decoration:none;color:#2DDCB4">here</a>.<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:12px;text-align:left;color:#000000;"
+      >Your email address is on this list as a result of a subscription, information request, competition, or other correspondence you may have had with us in the past. If you would like to be removed from our list, check the email address this newsletter
+          was sent to and use the following link: <a href="https://www.arturia.com/index.php?option=com_myarturia&view=newsletter&task=unsubscribeFromEmail&email={email}&token={title}&utm_source=elasticemail&utm_medium=email&utm_campaign=arturia_unsubscribe_2016&utm_term=nl-ispark-launch&utm_content=unsubscribe_footer"
+            style="text-decoration:none;color:#2DDCB4">Unsubscribe</a>. Privacy policy available <a href="https://www.arturia.com/privacypolicy" style="text-decoration:none;color:#2DDCB4">here</a>.</div>
     
               </td>
             </tr>
           
             <tr>
-              <td align="left" class="ip-text-block" style="font-size:0px;padding:10px 25px 0px 25px;word-break:break-word;">
+              <td
+                 align="left" style="font-size:0px;padding:10px 25px;padding-bottom:0;word-break:break-word;"
+              >
                 
-      <div style="font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:12px;text-align:left;color:#000000;"><!-- htmlmin:ignore -->ARTURIA: <a href="https://www.arturia.com" style="text-decoration:none;color:#2DDCB4">https://www.arturia.com</a> - Contact: <a href="mailto:info@arturia.com" style="text-decoration:none;color:#2DDCB4">info</a><br> ARTURIA France: 30 chemin
-					          du vieux chêne, 38240 Meylan - FRANCE<br> ARTURIA US: : 5776-D Lindero Cyn Rd #239 -Westlake Village, CA 91362 - USA<!-- htmlmin:ignore --></div>
+      <div
+         style="font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:12px;text-align:left;color:#000000;"
+      >ARTURIA: <a href="https://www.arturia.com" style="text-decoration:none;color:#2DDCB4">https://www.arturia.com</a> - Contact: <a href="mailto:info@arturia.com" style="text-decoration:none;color:#2DDCB4">info</a><br /> ARTURIA France: 30 chemin
+          du vieux chêne, 38240 Meylan - FRANCE<br /> ARTURIA US: : 5776-D Lindero Cyn Rd #239 -Westlake Village, CA 91362 - USA</div>
     
               </td>
             </tr>
           
             <tr>
-              <td class="ip-divider-block" style="font-size:0px;padding:10px 0px 10px 0px;word-break:break-word;">
+              <td
+                 style="font-size:0px;padding:10px 25px;padding-right:0;padding-left:0;word-break:break-word;"
+              >
                 
-      <p style="border-top:solid 0px #000000;font-size:1px;margin:0px auto;width:100%;">
+      <p
+         style="border-top:solid 4px #000000;font-size:1px;margin:0px auto;width:100%;"
+      >
       </p>
       
       <!--[if mso | IE]>
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 0px #000000;font-size:1px;margin:0px auto;width:NaNpx;" role="presentation" width="NaNpx"
+           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 4px #000000;font-size:1px;margin:0px auto;width:600px;" role="presentation" width="600px"
         >
           <tr>
             <td style="height:0;line-height:0;">
@@ -1269,11 +1208,6 @@
               </td>
             </tr>
           
-      </table>
-    
-            </td>
-          </tr>
-        </tbody>
       </table>
     
       </div>
