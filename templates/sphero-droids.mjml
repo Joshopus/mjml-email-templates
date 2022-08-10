@@ -6,23 +6,23 @@
     <mj-raw>
       <!-- Hero image -->
     </mj-raw>
-    <mj-section background-color="#000000" padding="0px">
+    <mj-section background-color="#000000" padding="0">
       <mj-column>
-        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_REAL_Hero.jpg" alt="These Are The Droids You're Looking For" href="https://www.youtube.com/sphero" padding="0px"></mj-image>
+        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_REAL_Hero.jpg" alt="These Are The Droids You're Looking For" href="https://www.youtube.com/sphero" padding="0"></mj-image>
       </mj-column>
     </mj-section>
     <mj-raw>
       <!-- Features Section -->
     </mj-raw>
-    <mj-section background-color="#000000" padding-top="10">
+    <mj-section background-color="#000000" padding-top="10px">
       <mj-column>
-        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_features.jpg" alt="Featuring Authentic Movement, Holographic Simulation, Droid to Droid Experience, and Watch With Me" padding="0px"></mj-image>
+        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_features.jpg" alt="Featuring Authentic Movement, Holographic Simulation, Droid to Droid Experience, and Watch With Me" padding="0"></mj-image>
       </mj-column>
     </mj-section>
     <mj-raw>
       <!-- R2-D2 Section -->
     </mj-raw>
-    <mj-section background-color="#000000" background-url="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1.r2BG.jpg" background-repeat="no-repeat" padding-top="80" padding-bottom="0px" padding-left="20px">
+    <mj-section background-color="#000000" background-url="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1.r2BG.jpg" background-repeat="no-repeat" padding-top="80px" padding-bottom="0" padding-left="20px">
       <mj-column>
         <mj-spacer height="15px"></mj-spacer>
         <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2text.png" width="196px" alt="Buy R2D2" href="https://www.sphero.com/starwars/r2d2"></mj-image>
@@ -33,13 +33,13 @@
       </mj-column>
       <mj-column>
         <mj-spacer height="45px"></mj-spacer>
-        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2-D2.png" href="https://www.sphero.com/starwars/r2d2" alt="Get the new R2-D2" width="310px" padding="0px"></mj-image>
+        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_R2-D2.png" href="https://www.sphero.com/starwars/r2d2" alt="Get the new R2-D2" width="310px" padding="0"></mj-image>
       </mj-column>
     </mj-section>
     <mj-raw>
       <!-- BB-9E Section -->
     </mj-raw>
-    <mj-section background-color="#000000" background-url="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1REDbg.jpg" background-repeat="no-repeat" padding-top="30" padding-left="20px">
+    <mj-section background-color="#000000" background-url="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1REDbg.jpg" background-repeat="no-repeat" padding-top="30px" padding-left="20px">
       <mj-column>
         <mj-spacer height="37px"></mj-spacer>
         <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_BB-9E-text.png" width="196px" alt="Buy BB-9E" href="https://www.sphero.com/starwars/bb9e"></mj-image>
@@ -49,7 +49,7 @@
       </mj-column>
       <mj-column>
         <mj-spacer height="60px"></mj-spacer>
-        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_bb9e.png" href="https://www.sphero.com/starwars/bb9e" alt="Get the new BB-9E" width="310px" padding="0px"></mj-image>
+        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_bb9e.png" href="https://www.sphero.com/starwars/bb9e" alt="Get the new BB-9E" width="310px" padding="0"></mj-image>
       </mj-column>
     </mj-section>
     <mj-raw>
@@ -66,14 +66,14 @@
       </mj-column>
       <mj-column>
         <mj-spacer height="55px"></mj-spacer>
-        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_bb8.png" href="https://www.sphero.com/starwars/bb8" width="310px" alt="Get the new BB-8" padding="0px"></mj-image>
+        <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/Star_Wars_Launch_Email_1_bb8.png" href="https://www.sphero.com/starwars/bb8" width="310px" alt="Get the new BB-8" padding="0"></mj-image>
         <mj-spacer height="155px"></mj-spacer>
       </mj-column>
     </mj-section>
     <mj-raw>
       <!-- Bottom Bar -->
     </mj-raw>
-    <mj-section background-color="#424143" padding-right="10px" padding-top="0" padding-bottom="0px">
+    <mj-section background-color="#424143" padding-right="10px" padding-top="0" padding-bottom="0">
       <mj-column width="33.33333333333333%"></mj-column>
       <mj-column width="33.33333333333333%">
         <mj-image src="https://dmmedia.sphero.com/email-marketing/Star-Wars/sphero-logo-bottom-gray.png" href="https://www.sphero.com" width="134px" align="center"></mj-image>
